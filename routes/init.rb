@@ -1,4 +1,4 @@
-def display_error text = "Неизвестная ошибка", title = "Ошибка"
+def display_error text = "Unknown error", title = "Error"
   @title = title
   @error = title
   @msg   = text

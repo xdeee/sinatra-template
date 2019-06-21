@@ -7,8 +7,8 @@ get '/*' do
 end
 
 not_found do
-  @title = "Ошибка 404"
+  @title = "Error 404"
   @error = @title
-  @msg   = "Такой страницы не существует"
+  @msg   = "The page doesn't exist"
   haml :error
 end
