@@ -1,0 +1,21 @@
+!!!Strict
+%html{html_attrs("ru-RU")}
+  %head
+    %meta{ :charset => "utf-8" }
+    %meta{ "http-equiv" => "Content-Type", :content => "text/html; charset=utf-8"}
+    %meta{ :name => "viewport", :content => "width=device-width, initial-scale=1, shrink-to-fit=no"}
+    %link{ :rel => "stylesheet", :href => "/css/bootstrap.min.css"}
+    / %link{ :rel => "stylesheet", :href => "/css/fontawesome-all.min.css"}
+    %link{ :rel => "stylesheet", :href => "/css/custom-styles.css"}
+
+    %link{ :rel => "shortcut icon", :href => "/favicon.ico"}
+
+    %script{ :src => "/js/jquery-3.3.1.min.js"}
+    %script{ :src => "/js/bootstrap.bundle.min.js"}
+    %script{ :src => "/js/main.js"}
+
+    %title= (@title.nil? ? "": "#{@title}  | ") + "Project title"
+
+  %body
+    %main.container{ :role => "main" }
+      !=yield
