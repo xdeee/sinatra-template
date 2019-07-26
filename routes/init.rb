@@ -1,4 +1,6 @@
-def display_error text = "Unknown error", title = "Error"
+# frozen_string_literal: true
+
+def display_error(text = 'Unknown error', title = 'Error')
   @title = title
   @error = title
   @msg   = text

@@ -1,4 +1,6 @@
-require "sequel"
+# frozen_string_literal: true
+
+require 'sequel'
 DB = Sequel.connect("sqlite://#{Dir.pwd}/db.sqlite")
 
 Sequel.extension :migration
